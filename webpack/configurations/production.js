@@ -31,7 +31,7 @@ export const generateProductionConfiguration = () =>
                     new UglifyJSPlugin({
                         uglifyOptions: {
                             mangle: {
-                                safari10: false,
+                                safari10: false, // Фикс бага сборки сафари 10 и сафари 11.
                             },
                         },
                     })
