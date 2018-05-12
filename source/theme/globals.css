@@ -1,10 +1,6 @@
 * {
     box-sizing: border-box;
     outline: 0;
-
-    /**
-     * Пришлось применитть !important чтобы взять верх над стилями antd
-     */
     font-family: roboto mono, roboto, system-ui;
 }
 
