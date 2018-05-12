@@ -5,6 +5,7 @@ import { source, build } from '../paths';
 import { DefinePlugin, ContextReplacementPlugin } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import HtmlWebpackTemplate from 'html-webpack-template';
+import StylishReporter from 'webpack-stylish';
 
 export const generateCommonConfiguration = () => {
     const BUILD_ENV = process.env.BUILD_ENV;
@@ -79,7 +80,8 @@ export const generateCommonConfiguration = () => {
                 __ENV__:  JSON.stringify(BUILD_ENV),
                 __DEV__:  BUILD_ENV === 'development',
                 __PROD__: BUILD_ENV === 'production',
-            })
+            }),
+            new StylishReporter(),
         ],
     };
 };
