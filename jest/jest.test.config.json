@@ -6,7 +6,11 @@
     "notify": true,
     "bail": false,
     "collectCoverage": false,
-    "collectCoverageFrom": ["<rootDir>/source/**/*.js"],
+    "collectCoverageFrom": [
+        "<rootDir>/source/instruments/*.js",
+        "<rootDir>/source/components/Counter/*.js",
+        "<rootDir>/source/components/Composer/*.js"
+    ],
     "modulePaths": ["<rootDir>/source", "<rootDir>/node_modules"],
     "moduleFileExtensions": ["js", "json", "css"],
     "setupFiles": ["<rootDir>/jest/scripts/setupFiles.js"],
