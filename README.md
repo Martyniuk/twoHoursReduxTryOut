@@ -9,6 +9,12 @@
 *   `yarn` или `npm i`
 *   `yarn start` или `npm start`
 
+---
+
+Документация к API доступна по [ссылке](https://lab.lectrum.io/docs/react/).
+
+---
+
 ## Чтобы задеплоить приложение на github pages:
 
 *   Запуши репозиторий с приложением на github
