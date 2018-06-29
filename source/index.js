@@ -1,24 +1,17 @@
 // Core
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+
+// Instruments
+import App from './containers/App';
+import { store } from './store';
 
 // Theme
 import './theme/init';
 
-const start = (
-    <div
-        style = { {
-            display:         'flex',
-            justifyContent:  'center',
-            alignItems:      'center',
-            minHeight:       '100vh',
-            backgroundColor: 'slateblue',
-            color:           'white',
-            fontSize:        24,
-            fontWeight:      '600',
-        } }>
-        Интенсив по React: стартовая точка
-    </div>
-);
-
-ReactDOM.render(start, document.getElementById('app'));
+render(
+    <Provider store = { store }>
+        <App />
+    </Provider>
+    , document.getElementById('app'));

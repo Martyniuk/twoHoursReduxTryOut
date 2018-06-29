@@ -60,6 +60,7 @@ export const loadDevelopmentCss = () => ({
                         loader:  'css-loader',
                         options: {
                             sourceMap: true,
+                            modules:   true,
                         },
                     },
                     loadPostCSS()

@@ -25,10 +25,12 @@
     "dependencies": {
         "classnames": "~2.2.6",
         "gsap": "~2.0.1",
+        "immutable": "^3.8.2",
         "moment": "~2.22.2",
         "react": "~16.4.1",
         "react-dom": "~16.4.1",
         "react-transition-group": "~2.3.0",
+        "redux-saga": "^0.16.0",
         "reset-css": "~4.0.1",
         "socket.io-client": "~2.1.1"
     },
@@ -81,6 +83,8 @@
         "prop-types": "~15.6.2",
         "react-dev-utils": "~5.0.1",
         "react-hot-loader": "~4.3.3",
+        "react-redux": "^5.0.7",
+        "redux": "^4.0.0",
         "style-loader": "~0.21.0",
         "stylelint": "~9.3.0",
         "url-loader": "~1.0.1",
