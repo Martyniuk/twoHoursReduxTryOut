@@ -70,7 +70,7 @@ class Index extends Component {
 
     handleSubmit = () => {
         //elsint-disable-nest-line
-        const { email, password } = this.state;
+        // const { email, password } = this.state;
 
         // dispatch action, saga will watch it and then will send request with fields above
     };
